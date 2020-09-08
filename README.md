@@ -4,7 +4,7 @@ The goal is to create an Score Keeper app which gives a user the ability to keep
 
 In this project i was able to:
 
-- Adding button code to your app.
+- Adding button code to app.
 - Updating views.
 - Properly scoping variables.
 - Finding views by their ID.

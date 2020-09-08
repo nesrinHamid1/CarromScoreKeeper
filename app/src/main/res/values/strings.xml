@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Carrom Score Keeper</string>
+    <string name="reset">RESET</string>
+    <string name="space" />
+    <string name="winner_is">winner is:</string>
+    <string name="_0">0</string>
+    <string name="team_white">Team white</string>
+    <string name="team_black">Team Black</string>
+</resources>

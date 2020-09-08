@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_main_bg"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/team_black"
+            android:textColor="#99A4B5"
+            android:textSize="30sp"
+            android:layout_marginStart="15dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_black_striker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_black_striker"
+                android:onClick="black_striker" />
+
+            <Button
+                android:id="@+id/button_purple_striker_team_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_purple_striker"
+                android:onClick="purple_striker_TeamBlack" />
+
+            <TextView
+                android:id="@+id/score_team_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/_0"
+                android:textColor="#99A4B5"
+                android:textSize="60sp"
+                android:layout_marginStart="50dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/team_white"
+            android:textColor="#99A4B5"
+            android:textSize="30sp"
+            android:layout_marginStart="15dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_white_striker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_white_striker"
+                android:onClick="white_striker" />
+
+            <Button
+                android:id="@+id/button_purple_striker_team_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_purple_striker"
+                android:onClick="purple_striker_TeamWhite" />
+
+            <TextView
+                android:id="@+id/score_team_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/_0"
+                android:textColor="#99A4B5"
+                android:textSize="60sp"
+                android:layout_marginStart="50dp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/winner_is"
+            android:textColor="#99A4B5"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/winner_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/space"
+            android:textColor="#99A4B5"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/ic_button_bg"
+        android:onClick="resetButton"
+        android:text="@string/reset"
+        android:textColor="#B10097"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
